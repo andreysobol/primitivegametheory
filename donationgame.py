@@ -39,3 +39,13 @@ def check_nash_equilibrium(multiplied_strategies, payoffs, strategy, players):
             if potential_player_strategy_payoff > player_strategy_payoff:
                 result = False
     return result
+
+assert(False == check_nash_equilibrium(multiplied_strategies, payoffs, ("cooperate", "cooperate"), players))
+assert(False == check_nash_equilibrium(multiplied_strategies, payoffs, ("cooperate", "cheat"), players))
+assert(False == check_nash_equilibrium(multiplied_strategies, payoffs, ("cheat", "cooperate"), players))
+assert(True == check_nash_equilibrium(multiplied_strategies, payoffs, ("cheat", "cheat"), players))
+
+print(False == check_nash_equilibrium(multiplied_strategies, payoffs, ("cooperate", "cooperate"), players))
+print(False == check_nash_equilibrium(multiplied_strategies, payoffs, ("cooperate", "cheat"), players))
+print(False == check_nash_equilibrium(multiplied_strategies, payoffs, ("cheat", "cooperate"), players))
+print(True == check_nash_equilibrium(multiplied_strategies, payoffs, ("cheat", "cheat"), players))
