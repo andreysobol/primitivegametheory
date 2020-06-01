@@ -1,10 +1,10 @@
 players = ("player1", "player2")
 
-strategys = ("cheat", "cooperate")
+strategies = ("cheat", "cooperate")
 
-player1_strategys = strategy
-player2_strategys = strategy
+player1_strategies = strategies
+player2_strategies = strategies
 
 from itertools import product
 
-multiplied_strategys = product(player1_strategy, player2_strategys)
+multiplied_strategies = product(player1_strategies, player2_strategies)
