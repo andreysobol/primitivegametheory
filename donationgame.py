@@ -22,3 +22,5 @@ def calculate_payoffs(multiplied_strategies):
             payoff = {"player1":0, "player2":0}
         r[strategies] = payoff
     return r
+
+payoffs = calculate_payoffs(multiplied_strategies)
