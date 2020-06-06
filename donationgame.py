@@ -25,6 +25,9 @@ def calculate_payoffs(multiplied_strategies):
 
 payoffs = calculate_payoffs(multiplied_strategies)
 
+from nash_equilibrium import check_nash_equilibrium
+
+'''
 def check_nash_equilibrium(multiplied_strategies, payoffs, strategy, players):
     result = True
     payoff = payoffs[strategy]
@@ -39,6 +42,7 @@ def check_nash_equilibrium(multiplied_strategies, payoffs, strategy, players):
             if potential_player_strategy_payoff > player_strategy_payoff:
                 result = False
     return result
+'''
 
 assert(False == check_nash_equilibrium(multiplied_strategies, payoffs, ("cooperate", "cooperate"), players))
 assert(False == check_nash_equilibrium(multiplied_strategies, payoffs, ("cooperate", "cheat"), players))
